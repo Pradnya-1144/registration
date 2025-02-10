@@ -1,0 +1,501 @@
+/* ==========================
+   General Styles
+   ========================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+    color: #333;
+}
+
+/* ==========================
+   Header Section
+   ========================== */
+.header {
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
+}
+
+/* Main Logo - Amity University */
+.main-logo a img {
+    width: 100px;
+}
+
+/* Event Logo - Pharma Anveshan 2025 */
+.event-logo img {
+    width: 150px;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+/* Navigation Links */
+.nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Navigation Hover Effect */
+.nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================
+   Introduction Section
+   ========================== */
+.intro-container {
+    background-color: #002147;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Main Heading - Pharma Anveshan 2025 */
+.intro-container h1 {
+    font-size: 80px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Subheading - Conference Title */
+.intro-container h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.intro-container p {
+    font-size: 16px;
+    color: whitesmoke;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ==========================
+   Buttons - Register & Download Brochure
+   ========================== */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Button Styles */
+.buttons a {
+    text-decoration: none;
+    color: black;
+    background-color: #ffcc00;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.buttons a:hover {
+    background-color: white;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    overflow: hidden;
+    padding: 20px;
+    background: transparent;
+    border: 1px solid black;
+    /* border-radius: 10px; */
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+
+}
+
+.brand {
+    width: 160px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.brand img {
+    width: 60%;
+    height: auto;
+}
+
+.brand:hover {
+    /* transform: scale(1.2) rotate(5deg); */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* @keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+.brand-container .brand {
+    animation: slideIn 0.6s ease-in-out;
+}
+
+/* ==========================
+   Event Info Section
+   ========================== */
+.event-info-container {
+    padding: 40px 60px;
+    background-color: #e6b800;
+    text-align: left;
+    margin: 50px auto;
+    display: flex;
+}
+
+/* Subheading - About Pharma Anveshan */
+.event-info-container h1 {
+    font-size: 50px;
+    color: #002147;
+}
+
+/* Highlighted Text */
+.highlight {
+    font-weight: bold;
+}
+
+/* Professor Mahadeva Lal Schroff Section */
+.event-info-container h2 {
+    font-size: 26px;
+    color: #002147;
+    margin-top: 20px;
+}
+
+.event-info-container div p {
+    margin-right: 100px;
+    font-size: 20px;
+    color: #000;
+}
+
+/* ==========================
+   Support Image Section
+   ========================== */
+.support-img {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Image inside Support Section */
+.support-img img {
+    width: 280px;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+
+/* card section */
+.card-section {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #0c2a4d;
+    margin-bottom: 50px;
+}
+
+/* First Row: Big Card */
+.first-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.first-row p {
+    color: #555;
+}
+
+/* General Card Styling */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Big Card Styles */
+.big-card {
+    width: 50%;
+    /* Adjusted for better layout */
+    max-width: 400px;
+    /* Prevents it from getting too large */
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #e6b800;
+}
+
+.big-card img {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    /* border-radius: 8px; */
+}
+
+.big-card h3 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+/* Second Row: Small Cards */
+.second-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Ensures even spacing */
+}
+
+.small-card {
+    width: 30%;
+    /* Adjusted for 4-column layout */
+    max-width: 300px;
+    /*Prevents excessive width*/
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #e6b800;
+}
+
+.small-card img {
+    width: 100%;
+    height: 300px;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.small-card h4 {
+    font-size: 1.2em;
+}
+
+.card p {
+    color: #555;
+    padding: 0 15px 15px;
+}
+
+.title {
+    font-size: 50px;
+    color: white;
+}
+
+
+/* ==========================
+   Footer Section
+   ========================== */
+footer {
+    background-color: white;
+    color: white;
+    /* padding: 20px; */
+    /* border-top: 1px solid #e0e0e0; */
+    /* box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Footer Layout */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* max-width: 1250px; */
+    /* margin: 0 auto; */
+    padding: 50px 100px;
+    background-color: #002147;
+    flex-wrap: wrap;
+    /* border-top-left-radius: 50px; */
+    /* border-bottom-right-radius: 50px; */
+}
+
+/* Footer Logo */
+.footer img {
+    height: auto;
+}
+
+/* Footer Menu */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* Make the menu vertical */
+    gap: 10px;
+    /* Space between menu items */
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.789);
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu h3 {
+    font-size: 18px;
+    color: #e6b800;
+    margin-bottom: 10px;
+}
+
+.menu a:hover {
+    color: #e6b800;
+    /* Highlight color on hover */
+}
+
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+/* Footer Contact Info */
+.contact-info {
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    color: #e6b800;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    display: block;
+    /* Make links stack vertically */
+    text-decoration: none;
+    color: rgb(187, 183, 183);
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #e6b800
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links h2 {
+    color: #e6b800;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #e6b800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    /* Stack Header Content for Mobile */
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Stack Navigation Links */
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Reduce Heading Size on Small Screens */
+    h1 {
+        font-size: 50px;
+    }
+
+    /* Stack Buttons */
+    .buttons {
+        flex-direction: column;
+    }
+
+    .intro-container h1 {
+        font-size: 40px;
+    }
+
+    .intro-container h2 {
+        font-size: 16px;
+    }
+
+    .intro-container p {
+        line-height: 1.4;
+    }
+
+    .brand-container {
+        flex-wrap: wrap;
+        padding: 16px;
+    }
+
+    .event-info-container {
+        flex-wrap: wrap;
+        padding: 40px 25px;
+    }
+
+    .event-info-container h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .event-info-container div p {
+        margin: 0;
+    }
+    .support-img {
+    
+        margin: 40px auto;
+        /* width: ; */
+    }
+    /* Reduce Event Image Size */
+    .support-img img {
+        margin: 0;
+    }
+
+    .big-card {
+        width: 80%;
+        /* Adjust for smaller screens */
+    }
+
+    .second-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .small-card {
+        width: 80%;
+    }
+}
